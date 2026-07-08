@@ -21,7 +21,11 @@
         <form>
           <label class="field">
             <span>Content</span>
-            <input type="text" id="input-content" placeholder="https://example.com" />
+            <input
+              type="text"
+              id="input-content"
+              placeholder="https://example.com"
+            />
           </label>
 
           <label class="field">
@@ -33,7 +37,7 @@
             </select>
           </label>
 
-          <button type="submit" id="create-qr-code">Create QR Code</button>
+          <button type="button" id="create-qr-code">Create QR Code</button>
         </form>
       </section>
 
@@ -41,11 +45,17 @@
         <div id="qr-code">your QR code will appear here</div>
       </aside>
     </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 QR Code Generator . Built by FredZonTech . Version 1.0</p>
+    </footer>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
       integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -86,6 +86,13 @@ button {
   padding: 24px;
 }
 
+.footer {
+  padding: 16px 32px 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
 @media (max-width: 760px) {
   .app {
     grid-template-columns: 1fr;
