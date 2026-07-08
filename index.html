@@ -21,25 +21,41 @@
         <form>
           <label class="field">
             <span>Content</span>
-            <input type="text" placeholder="https://example.com" />
+            <input
+              type="text"
+              id="input-content"
+              placeholder="https://example.com"
+            />
           </label>
 
           <label class="field">
             <span>Size</span>
-            <select>
+            <select id="input-size">
               <option>100 × 100</option>
               <option selected>200 × 200</option>
               <option>300 × 300</option>
             </select>
           </label>
 
-          <button type="submit">Create QR Code</button>
+          <button type="button" id="create-qr-code">Create QR Code</button>
         </form>
       </section>
 
       <aside class="preview" aria-label="QR code preview">
-        <div class="qr-pattern"></div>
+        <div id="qr-code">your QR code will appear here</div>
       </aside>
     </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 QR Code Generator . Built by FredZonTech . Version 1.0</p>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
